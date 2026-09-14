@@ -25,10 +25,10 @@ Note ton avancée après chaque TP. Reste factuel, sans données personnelles. C
 
 ## TP03 — Formulaire
 
-- Hypothèse :
-- Action :
-- Résultat :
-- Point non compris :
+- Hypothèse : Dans un text area, Enter ajoute une nouvelle ligne et n'envoie pas directement le formulaire
+- Action : formulaire `chat-form` ajouté, textarea et bouton Envoyer ajouté et JS fourni recopié
+- Résultat : le formulaire, le statut à l'envoi du form est `Interface prête ; les réponses arrivent au J2` et la version est ``dev`
+- Point non compris : aucun
 
 ## TP04 — Responsive
 
