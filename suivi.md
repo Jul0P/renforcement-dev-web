@@ -69,9 +69,9 @@ Si Node ou Git bloque, note le message exact et continue en local sans attendre.
 
 ## Auto-revue finale
 
-- Ce qui s'affiche bien :
-- Ce qui reste fragile au clavier ou à 360 px :
-- Ce que je veux revoir en capsule :
+- Ce qui s'affiche bien : la page Cap Web avec le titre, la section Discussion, le formulaire, le statut et la version.
+- Ce qui reste fragile au clavier ou à 360 px : rien tout fonctioonne
+- Ce que je veux revoir en capsule : ?
 
 ## Rappel Git prudent
 
