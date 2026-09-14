@@ -11,10 +11,10 @@ Note ton avancée après chaque TP. Reste factuel, sans données personnelles. C
 
 ## TP01 — Démarrer
 
-- Hypothèse :
-- Action :
-- Résultat :
-- Point non compris :
+- Hypothèse : si le JS ne charge pas le titre et le texte HTML sont affichés mais le statut reste vide
+- Action : version de Node vérifiée, la page et les balises `main`, `h1` et `p#status` contrôlées
+- Résultat : le serveur est disponible sur `http://127.0.0.1:3000/`, le JS renvoie bien : Votre point de départ est prêt
+- Point non compris : aucun
 
 ## TP02 — HTML
 
@@ -49,9 +49,17 @@ git diff
 
 Mes essais :
 
-- Dossier :
-- Commande et résultat :
-- Problème exact si blocage :
+- Dossier : racine étudiante
+- Commande et résultat : `node --version` : `v24.20.0`
+- Problème exact si blocage : aucun
+
+- Dossier : racine étudiante
+- Commande et résultat : `git branch --show-current` : `travail/jpar/j1`
+- Problème exact si blocage : aucun
+
+- Dossier : `atelier`
+- Commande et résultat : `npm start` : `Cap Web prêt sur http://127.0.0.1:3000/`
+- Problème exact si blocage : aucun
 
 Si Node ou Git bloque, note le message exact et continue en local sans attendre. Le double-clic sur `diagnostic/index.html` ne remplace pas le serveur pour les modules et l'envoi du TP03.
 
