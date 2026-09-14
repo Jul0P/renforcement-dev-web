@@ -32,10 +32,10 @@ Note ton avancée après chaque TP. Reste factuel, sans données personnelles. C
 
 ## TP04 — Responsive
 
-- Hypothèse :
-- Action :
-- Résultat :
-- Point non compris, test 360 / 1280 :
+- Hypothèse : un mot trop grand peut déborder d'un conteneur s'il n'y a pas de règle
+- Action : box ajoutée, retrait des marges du `body`, conteneurs centrés et limités à 760 px, formulaire en colonne, espacements et focus visible ajoutés
+- Résultat : champ et bouton responsive et visibles selon les consignes et gestion des mots long
+- Point non compris, test 360 / 1280 : aucun
 
 ## Commandes essayées
 
@@ -59,6 +59,10 @@ Mes essais :
 
 - Dossier : `atelier`
 - Commande et résultat : `npm start` : `Cap Web prêt sur http://127.0.0.1:3000/`
+- Problème exact si blocage : aucun
+
+- Dossier : `atelier`
+- Commande et résultat : `npx playwright install` et test temporaire via Playwright : 360 px et 1280 px sans défilement horizontal, champ et bouton présents, liste vide
 - Problème exact si blocage : aucun
 
 Si Node ou Git bloque, note le message exact et continue en local sans attendre. Le double-clic sur `diagnostic/index.html` ne remplace pas le serveur pour les modules et l'envoi du TP03.
