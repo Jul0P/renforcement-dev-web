@@ -4,10 +4,10 @@ Note ton avancée après chaque TP. Reste factuel, sans données personnelles. C
 
 ## TP00 — Diagnostic
 
-- Hypothèse :
-- Action :
-- Résultat :
-- Point non compris :
+- Hypothèse : effet de cascade et largeur fixe
+- Action : HTML, CSS corrigé et les fonctions JS sont complétées
+- Résultat : la page s'affiche, le formulaire est accessible avec le clavier et pas de débordement de 360 px comme attendu
+- Point non compris : aucun
 
 ## TP01 — Démarrer
 
