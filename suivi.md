@@ -11,31 +11,31 @@ Note ton avancée après chaque TP. Reste factuel, sans données personnelles. C
 
 ## TP01 — Démarrer
 
-- Hypothèse :
-- Action :
-- Résultat :
-- Point non compris :
+- Hypothèse : si le JS ne charge pas le titre et le texte HTML sont affichés mais le statut reste vide
+- Action : version de Node vérifiée, la page et les balises `main`, `h1` et `p#status` contrôlées
+- Résultat : le serveur est disponible sur `http://127.0.0.1:3000/`, le JS renvoie bien : Votre point de départ est prêt
+- Point non compris : aucun
 
 ## TP02 — HTML
 
-- Hypothèse :
-- Action :
-- Résultat :
-- Point non compris :
+- Hypothèse : remplacer `main` par `div` ne change pas le visuel mais supprime le repère dans le DOM
+- Action : `header`, `main` et `footer`, `h1` déplacé, section liée, liste `messages` et statut
+- Résultat : un seul `h1`, section liée à `h2#titre-chat`, `ul#messages` vide et `p#status` conservé
+- Point non compris : aucun
 
 ## TP03 — Formulaire
 
-- Hypothèse :
-- Action :
-- Résultat :
-- Point non compris :
+- Hypothèse : Dans un text area, Enter ajoute une nouvelle ligne et n'envoie pas directement le formulaire
+- Action : formulaire `chat-form` ajouté, textarea et bouton Envoyer ajouté et JS fourni recopié
+- Résultat : le formulaire, le statut à l'envoi du form est `Interface prête ; les réponses arrivent au J2` et la version est ``dev`
+- Point non compris : aucun
 
 ## TP04 — Responsive
 
-- Hypothèse :
-- Action :
-- Résultat :
-- Point non compris, test 360 / 1280 :
+- Hypothèse : un mot trop grand peut déborder d'un conteneur s'il n'y a pas de règle
+- Action : box ajoutée, retrait des marges du `body`, conteneurs centrés et limités à 760 px, formulaire en colonne, espacements et focus visible ajoutés
+- Résultat : champ et bouton responsive et visibles selon les consignes et gestion des mots long
+- Point non compris, test 360 / 1280 : aucun
 
 ## Commandes essayées
 
@@ -49,17 +49,29 @@ git diff
 
 Mes essais :
 
-- Dossier :
-- Commande et résultat :
-- Problème exact si blocage :
+- Dossier : racine étudiante
+- Commande et résultat : `node --version` : `v24.20.0`
+- Problème exact si blocage : aucun
+
+- Dossier : racine étudiante
+- Commande et résultat : `git branch --show-current` : `travail/jpar/j1`
+- Problème exact si blocage : aucun
+
+- Dossier : `atelier`
+- Commande et résultat : `npm start` : `Cap Web prêt sur http://127.0.0.1:3000/`
+- Problème exact si blocage : aucun
+
+- Dossier : `atelier`
+- Commande et résultat : `npx playwright install` et test temporaire via Playwright : 360 px et 1280 px sans défilement horizontal, champ et bouton présents, liste vide
+- Problème exact si blocage : aucun
 
 Si Node ou Git bloque, note le message exact et continue en local sans attendre. Le double-clic sur `diagnostic/index.html` ne remplace pas le serveur pour les modules et l'envoi du TP03.
 
 ## Auto-revue finale
 
-- Ce qui s'affiche bien :
-- Ce qui reste fragile au clavier ou à 360 px :
-- Ce que je veux revoir en capsule :
+- Ce qui s'affiche bien : la page Cap Web avec le titre, la section Discussion, le formulaire, le statut et la version.
+- Ce qui reste fragile au clavier ou à 360 px : rien tout fonctioonne
+- Ce que je veux revoir en capsule : ?
 
 ## Rappel Git prudent
 
