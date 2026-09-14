@@ -18,10 +18,10 @@ Note ton avancée après chaque TP. Reste factuel, sans données personnelles. C
 
 ## TP02 — HTML
 
-- Hypothèse :
-- Action :
-- Résultat :
-- Point non compris :
+- Hypothèse : remplacer `main` par `div` ne change pas le visuel mais supprime le repère dans le DOM
+- Action : `header`, `main` et `footer`, `h1` déplacé, section liée, liste `messages` et statut
+- Résultat : un seul `h1`, section liée à `h2#titre-chat`, `ul#messages` vide et `p#status` conservé
+- Point non compris : aucun
 
 ## TP03 — Formulaire
 
