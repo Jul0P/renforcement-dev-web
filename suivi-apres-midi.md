@@ -19,6 +19,15 @@ Recopiez ce bloc autant de fois que nécessaire.
 - Je n'ai pas compris :
 - Réponse à la question « Dans le suivi » du TP :
 
+### TP07
+
+- J'ai prédit : le message envoyé doit apparaître dans la liste sans recharger la page
+- Nous avons fait : le champ est lu, on refuse le texte vide, on crée un `li` et on ajoute le message avec `textContent`
+- J'ai observé : un message s'affiche avec `Vous :` et un message vide affiche une erreur
+- J'ai compris : `event.preventDefault()` empêche le rechargement et `textContent` écrit du texte sans interpréter le HTML
+- Je n'ai pas compris : aucun
+- Réponse à la question « Dans le suivi » du TP : `textContent` affiche le contenu comme du texte et avec `innerHTML` le navigateur aurait interprété la balise et le mot serait devenu gras
+
 ## Épreuve de l'explication (TP12)
 
 - Ce que je n'ai pas su expliquer :

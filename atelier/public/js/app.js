@@ -1,13 +1,26 @@
 const formulaire = document.querySelector("#chat-form");
+const champ = document.querySelector("#message");
+const liste = document.querySelector("#messages");
 const statut = document.querySelector("#status");
 const versionElt = document.querySelector("#version");
 
-// J1 : interface seule, on bloque l’envoi et on l’explique.
-formulaire?.addEventListener("submit", (event) => {
+formulaire.addEventListener("submit", (event) => {
 	event.preventDefault();
-	if (statut) {
-		statut.textContent = "Interface prête ; les réponses arrivent au J2.";
+
+	const texte = champ.value.trim();
+	if (texte === "") {
+		statut.textContent = "Le message ne doit pas être vide";
+		champ.focus();
+		return;
 	}
+
+	const ligne = document.createElement("li");
+	ligne.textContent = `Vous : ${texte}`;
+	liste.append(ligne);
+
+	champ.value = "";
+	statut.textContent = "";
+	champ.focus();
 });
 
 // Version du serveur local, échec discret si indisponible.
