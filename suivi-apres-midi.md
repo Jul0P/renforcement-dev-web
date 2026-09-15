@@ -46,6 +46,15 @@ Recopiez ce bloc autant de fois que nécessaire.
 - Je n'ai pas compris : je trouvais bizarre de remplacer toute la liste avec `replaceChildren` mais cela garde l'affichage cohérent du tableau
 - Réponse à la question « Dans le suivi » du TP : `app.js` relie le formulaire, le cerveau et l'affichage. `brain.js` vérifie le texte et choisit la réponse. `view.js` transforme la liste des messages en éléments visibles dans la page.
 
+### TP10
+
+- J'ai prédit : si on recharge la page, la conversation peut revenir grâce au stockage du navigateur
+- Nous avons fait : on enregistre `historique` dans `localStorage`, on le relit au démarrage et on a ajouté un bouton pour effacer
+- J'ai observé : le code ne dépend pas du serveur pour garder les messages, c'est le navigateur qui les garde
+- J'ai compris : le stockage local permet de conserver l'état de l'application indépendamment du serveur.
+- Je n'ai pas compris : aucun
+- Réponse à la question « Dans le suivi » du TP : je prédis que la conversation apparaît dans un autre onglet si c'est la même adresse `http://127.0.0.1:3000`. En navigation privée, je pense qu'elle ne reprend pas celle de la fenêtre normale. Sur `http://localhost:3000`, je pense que ça ne sera pas la même sauvegarde car ce n'est pas la même origine que `127.0.0.1`.
+
 ## Épreuve de l'explication (TP12)
 
 - Ce que je n'ai pas su expliquer :
