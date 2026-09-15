@@ -7,6 +7,7 @@ body {
 	font-family: system-ui, sans-serif;
 	line-height: 1.5;
 	color: #15213a;
+	background: #ffffff;
 }
 
 header,
@@ -20,7 +21,29 @@ footer {
 }
 
 #messages {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	padding: 0;
+	list-style: none;
 	overflow-wrap: anywhere;
+}
+
+#messages li {
+	max-width: 80%;
+	padding: 0.75rem;
+	border: 1px solid #d8dee9;
+	border-radius: 8px;
+	background: #f4f6f8;
+}
+
+#messages li[data-role="user"] {
+	align-self: flex-end;
+	background: #e6f0ff;
+}
+
+#messages li[data-role="assistant"] {
+	align-self: flex-start;
 }
 
 #chat-form {
@@ -36,7 +59,45 @@ button {
 	font: inherit;
 }
 
+button {
+	margin-block-start: 0.75rem;
+}
+
+button:disabled {
+	opacity: 0.65;
+}
+
 :focus-visible {
 	outline: 3px solid #1a56db;
 	outline-offset: 3px;
+}
+
+@media (prefers-color-scheme: dark) {
+	body:not([data-theme="light"]) {
+		color: #f4f7fb;
+		background: #111827;
+	}
+
+	body:not([data-theme="light"]) #messages li {
+		border-color: #4b5563;
+		background: #1f2937;
+	}
+
+	body:not([data-theme="light"]) #messages li[data-role="user"] {
+		background: #164e63;
+	}
+}
+
+body[data-theme="dark"] {
+	color: #f4f7fb;
+	background: #111827;
+}
+
+body[data-theme="dark"] #messages li {
+	border-color: #4b5563;
+	background: #1f2937;
+}
+
+body[data-theme="dark"] #messages li[data-role="user"] {
+	background: #164e63;
 }

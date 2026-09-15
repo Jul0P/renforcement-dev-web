@@ -27,15 +27,5 @@ export default defineConfig({
         ...(avecCanalChrome ? { channel: "chrome" } : {})
       }
     }
-  ],
-  webServer: {
-    command: "node server/start.js",
-    url: baseURL,
-    reuseExistingServer: false,
-    timeout: 20000,
-    env: {
-      HOST: "127.0.0.1",
-      PORT: "4173"
-    }
-  }
+  ]
 });

@@ -73,6 +73,15 @@ Recopiez ce bloc autant de fois que nécessaire.
 - Je n'ai pas compris : .
 - Réponse à la question « Dans le suivi » du TP : pas de question
 
+### TP13
+
+- J'ai predit : .
+- Nous avons fait : les défis
+- J'ai observe : .
+- J'ai compris : .
+- Je n'ai pas compris : rien
+- Reponse a la question "Dans le suivi" du TP : pas de question
+
 ## Épreuve de l'explication (TP12)
 
 - Ce que je n'ai pas su expliquer :
