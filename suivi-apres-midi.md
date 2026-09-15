@@ -37,6 +37,15 @@ Recopiez ce bloc autant de fois que nécessaire.
 - Je n'ai pas compris : rien
 - Réponse à la question « Dans le suivi » du TP : `brain.js` ne doit pas utiliser `document`, il doit juste traiter du texte. Si le serveur envoyait tous les fichiers du dossier, on pourrait accéder à des fichiers qui ne devraient pas être publics donc la liste blanche évite ça.
 
+### TP09
+
+- J'ai prédit : on allait déplacer l'affichage dans un autre fichier
+- Nous avons fait : on a créé `view.js` puis on a mis les messages dans un tableau `historique`
+- J'ai observé : la discussion marche comme avant mais maintenant `app.js` ne crée plus les ``li`
+- J'ai compris : le tableau garde les messages dans l'ordre et `renderMessages` refait l'affichage à partir de ce tableau
+- Je n'ai pas compris : je trouvais bizarre de remplacer toute la liste avec `replaceChildren` mais cela garde l'affichage cohérent du tableau
+- Réponse à la question « Dans le suivi » du TP : `app.js` relie le formulaire, le cerveau et l'affichage. `brain.js` vérifie le texte et choisit la réponse. `view.js` transforme la liste des messages en éléments visibles dans la page.
+
 ## Épreuve de l'explication (TP12)
 
 - Ce que je n'ai pas su expliquer :
