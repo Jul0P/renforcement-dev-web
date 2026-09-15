@@ -55,6 +55,15 @@ Recopiez ce bloc autant de fois que nécessaire.
 - Je n'ai pas compris : aucun
 - Réponse à la question « Dans le suivi » du TP : je prédis que la conversation apparaît dans un autre onglet si c'est la même adresse `http://127.0.0.1:3000`. En navigation privée, je pense qu'elle ne reprend pas celle de la fenêtre normale. Sur `http://localhost:3000`, je pense que ça ne sera pas la même sauvegarde car ce n'est pas la même origine que `127.0.0.1`.
 
+### TP11
+
+- J'ai prédit : les tests vérifient `brain.js`
+- Nous avons fait : on a créé `tests/brain.test.js` avec des tests sur les messages vides, les espaces, la limite de 280 caractères et les réponses
+- J'ai observé : quand tout est correct, `npm test` passe les tests
+- J'ai compris : un test sert à connaître vite une petite règle cassée même si le code à l'air normal
+- Je n'ai pas compris : rien
+- Réponse à la question « Dans le suivi » du TP : le test rouge disait `AssertionError [ERR_ASSERTION]: Expected values to be strictly equal: false !== true` la limite était dépassée car 280 caractères devaient passer mais la fonction répondait fals.
+
 ## Épreuve de l'explication (TP12)
 
 - Ce que je n'ai pas su expliquer :
