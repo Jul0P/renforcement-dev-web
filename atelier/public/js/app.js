@@ -1,3 +1,5 @@
+import { validateMessage, replyTo } from "./brain.js";
+
 const formulaire = document.querySelector("#chat-form");
 const champ = document.querySelector("#message");
 const liste = document.querySelector("#messages");
@@ -7,16 +9,20 @@ const versionElt = document.querySelector("#version");
 formulaire.addEventListener("submit", (event) => {
 	event.preventDefault();
 
-	const texte = champ.value.trim();
-	if (texte === "") {
-		statut.textContent = "Le message ne doit pas être vide";
+	const resultat = validateMessage(champ.value);
+	if (!resultat.ok) {
+		statut.textContent = resultat.error;
 		champ.focus();
 		return;
 	}
 
 	const ligne = document.createElement("li");
-	ligne.textContent = `Vous : ${texte}`;
+	ligne.textContent = `Vous : ${resultat.value}`;
 	liste.append(ligne);
+
+	const reponse = document.createElement("li");
+	reponse.textContent = `Cap Web : ${replyTo(resultat.value)}`;
+	liste.append(reponse);
 
 	champ.value = "";
 	statut.textContent = "";

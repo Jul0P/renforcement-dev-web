@@ -28,6 +28,15 @@ Recopiez ce bloc autant de fois que nécessaire.
 - Je n'ai pas compris : aucun
 - Réponse à la question « Dans le suivi » du TP : `textContent` affiche le contenu comme du texte et avec `innerHTML` le navigateur aurait interprété la balise et le mot serait devenu gras
 
+### TP08
+
+- J'ai prédit : il fallait mettre les réponses ailleurs que dans `app.js`
+- Nous avons fait : on a créé `brain.js` avec une fonction qui vérifie le message et une fonction qui choisit une réponse simple
+- J'ai observé : `salut`, `BONJOUR`, `aide` et `test` donnent une réponse de Cap Web et un message inconnu donne juste une réponse par défaut
+- J'ai compris : on sépare les responsabilités
+- Je n'ai pas compris : rien
+- Réponse à la question « Dans le suivi » du TP : `brain.js` ne doit pas utiliser `document`, il doit juste traiter du texte. Si le serveur envoyait tous les fichiers du dossier, on pourrait accéder à des fichiers qui ne devraient pas être publics donc la liste blanche évite ça.
+
 ## Épreuve de l'explication (TP12)
 
 - Ce que je n'ai pas su expliquer :
