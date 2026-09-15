@@ -64,6 +64,15 @@ Recopiez ce bloc autant de fois que nécessaire.
 - Je n'ai pas compris : rien
 - Réponse à la question « Dans le suivi » du TP : le test rouge disait `AssertionError [ERR_ASSERTION]: Expected values to be strictly equal: false !== true` la limite était dépassée car 280 caractères devaient passer mais la fonction répondait fals.
 
+### TP12
+
+- J'ai prédit : Vérifier le projet et qu'on sait l'expliquer
+- Nous avons fait : vérification du projet
+- J'ai observé : aucun changement, tous les tps précédents sont dans git avec un commit par TP
+- J'ai compris : .
+- Je n'ai pas compris : .
+- Réponse à la question « Dans le suivi » du TP : pas de question
+
 ## Épreuve de l'explication (TP12)
 
 - Ce que je n'ai pas su expliquer :
@@ -71,11 +80,11 @@ Recopiez ce bloc autant de fois que nécessaire.
 
 ## Trois questions
 
-1. Pourquoi `textContent` et pas `innerHTML` ?
-2. Pourquoi trois fichiers plutôt qu'un seul ?
-3. Si demain une IA écrit une partie du code, comment saurai-je qu'il est correct ?
+1. Pourquoi `textContent` et pas `innerHTML` ? `textContent` affiche juste du texte. Avec `innerHTML` le navigateur peut lire des balises HTML donc ce serait moins sûr si le message vient d'un utilisateur.
+2. Pourquoi trois fichiers plutôt qu'un seul ? `app.js` gère la page, `brain.js` gère les règles de réponse et `view.js` gère l'affichage. C'est plus simple à relire qu'un seul gros fichier.
+3. Si demain une IA écrit une partie du code, comment saurai-je qu'il est correct ? Je dois relire le code, le tester, lancer `npm test`. Vérifier également qu'il respecte les directives (dans un cadre plus professionnel).
 
 ## Aides utilisées
 
-- Indices, aide-mémoire, voisins :
-- Ce que j'ai demandé à une IA, et comment j'ai vérifié sa réponse :
+- Indices, aide-mémoire, voisins : consignes des TP et tests avec `npm test`
+- Ce que j'ai demandé à une IA, et comment j'ai vérifié sa réponse : Github Copilot avec l'autocomplétion et pour la reformulation des phrases. J'ai vérifié avec les consignes et `npm test`.
